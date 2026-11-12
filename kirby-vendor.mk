@@ -69,6 +69,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_policy_configuration.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_qrd_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_qrd_sku2.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/resourcemanager_pineapple_qrd_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/resourcemanager_pineapple_qrd_sku2.xml \
+    vendor/lenovo/kirby/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/lenovo/kirby/proprietary/vendor/etc/camera/pandora/AlgorithmDevelopmentTesterResources/AutoFraming/haarcascade_frontalface_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pandora/AlgorithmDevelopmentTesterResources/AutoFraming/haarcascade_frontalface_default.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/camera/pandora/AlgorithmDevelopmentTesterResources/AutoFraming/test.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/pandora/AlgorithmDevelopmentTesterResources/AutoFraming/test.mp4 \
@@ -1117,6 +1118,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kirby/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer3-V2-ndk-kirby \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
     com.qti.eeprom.irs2381c_polar \
@@ -1462,6 +1464,7 @@ PRODUCT_PACKAGES += \
     libipebpsstriping480 \
     libisphwsetting \
     libjpege \
+    libjson \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
@@ -1779,6 +1782,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.data.iwlandata-V1-ndk \
+    vendor.qti.hardware.display.composer3-V1-ndk-kirby \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.factory-V1-ndk \
     vendor.qti.hardware.factory@1.0 \
@@ -1935,6 +1939,7 @@ PRODUCT_PACKAGES += \
     irsc_util \
     loadalgo \
     mmid \
+    pd-mapper \
     pm-proxy \
     pm-service \
     pm_ioctl_app \
