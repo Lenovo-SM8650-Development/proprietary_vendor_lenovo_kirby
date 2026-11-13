@@ -1594,6 +1594,7 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqrtr \
     libqseed3 \
+    libqsegnet \
     libqsh \
     libqshcamera \
     libqsocket \
