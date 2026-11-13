@@ -532,6 +532,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kirby/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/lenovo/kirby/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/lenovo/kirby/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/lenovo/kirby/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/lenovo/kirby/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/lenovo/kirby/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/lenovo/kirby/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
@@ -1423,6 +1424,7 @@ PRODUCT_PACKAGES += \
     libclstc_tm \
     libcom.qti.chinodeutils \
     libcommonchiutils \
+    libconfigdb \
     libcpion \
     libcv_common \
     libdepthcomputation \
@@ -1437,6 +1439,7 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libdsd2pcm \
+    libdsi_netctrl \
     libdsutils \
     libeai_fixed \
     libeai_float \
@@ -1510,6 +1513,9 @@ PRODUCT_PACKAGES += \
     libmorpho_Ldc \
     libmpbase \
     libnative-api \
+    libnicm \
+    libnicm_dsi \
+    libnicm_utils \
     liboemcrypto \
     liboffscreenpoweroptfeature \
     libopencv \
@@ -1712,6 +1718,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc_vendor \
     libwfduibcsrcinterface_vendor \
     libwfdutils_proprietary \
+    libxml \
     qti.video.utils.videobufferlayout \
     libQ6MSFR_manager_skel \
     libQnnCpu_dsp \
@@ -1968,6 +1975,7 @@ PRODUCT_PACKAGES += \
     sscrpcd \
     ssgqmigd \
     ssgqmigd64 \
+    ssgtzd \
     ssr_diag \
     ssr_setup \
     subsystem_ramdump \
