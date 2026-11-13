@@ -974,6 +974,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kirby/proprietary/vendor/firmware/gen71100_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_sqe.fw \
     vendor/lenovo/kirby/proprietary/vendor/firmware/gen71100_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen71100_zap.mbn \
     vendor/lenovo/kirby/proprietary/vendor/firmware/gmu_gen70900.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70900.bin \
+    vendor/lenovo/kirby/proprietary/vendor/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin \
     vendor/lenovo/kirby/proprietary/vendor/firmware/novatek_ts_boe_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_boe_fw.bin \
     vendor/lenovo/kirby/proprietary/vendor/firmware/novatek_ts_boe_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_boe_mp.bin \
     vendor/lenovo/kirby/proprietary/vendor/firmware/novatek_ts_csot_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_csot_fw.bin \
