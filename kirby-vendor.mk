@@ -62,12 +62,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_3.4_enpuv4.pmd \
+    vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/pineapple_qrd/QRD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_qrd/QRD_acdb_cal.acdb \
+    vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/pineapple_qrd/QRD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_qrd/QRD_workspaceFileXml.qwsp \
     vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/pineapple_qrd_sku2/QRD_pineapple_sku2_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_qrd_sku2/QRD_pineapple_sku2_acdb_cal.acdb \
     vendor/lenovo/kirby/proprietary/vendor/etc/acdbdata/pineapple_qrd_sku2/QRD_pineapple_sku2_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_qrd_sku2/QRD_pineapple_sku2_workspaceFileXml.qwsp \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_effects.conf \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_effects.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_policy_configuration.xml \
+    vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_qrd.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_qrd_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_qrd_sku2.xml \
+    vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/resourcemanager_pineapple_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/resourcemanager_pineapple_qrd.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/audio/sku_pineapple/resourcemanager_pineapple_qrd_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/resourcemanager_pineapple_qrd_sku2.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     vendor/lenovo/kirby/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
