@@ -7,6 +7,8 @@ PRODUCT_PACKAGES += \
 
 # Motorola DMS/DAP trial, Roynas-Android-Playground/vendor_motorola_dolby de59281.
 # Keep Kirby's Codec2 dependencies and give the donor its own parameter store.
+# DMS uses the VNDK 32 AHandler layout. Its private foundation library keeps
+# the current foundation ABI available to other vendor services.
 KIRBY_MOTOROLA_DOLBY := vendor/lenovo/kirby/dolby/motorola
 
 PRODUCT_COPY_FILES += \
@@ -28,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/kirby/dolby/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     vendor/lenovo/kirby/dolby/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
     $(KIRBY_MOTOROLA_DOLBY)/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
+    $(KIRBY_MOTOROLA_DOLBY)/vendor/lib64/libstagefright_dax_compat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_dax_compat.so \
     vendor/lenovo/kirby/dolby/vendor/lib64/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbpreg.so \
     vendor/lenovo/kirby/dolby/vendor/lib64/libdmshal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdmshal.so \
     vendor/lenovo/kirby/dolby/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
