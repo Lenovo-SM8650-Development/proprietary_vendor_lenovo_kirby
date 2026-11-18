@@ -1,6 +1,14 @@
 # SPDX-License-Identifier: Apache-2.0
 
 PRODUCT_PACKAGES += \
+    MotoDolbyDax3 \
+    MotorolaSettingsProvider \
+    MotoSignatureApp \
+    com.motorola.frameworks.core.addon \
+    com.motorola.motosignature \
+    moto-checkin \
+    moto-settings \
+    moto \
     KirbyDaxService \
     kirby_dolby_dms_manifest \
     kirby_dolby_codec2_manifest
@@ -13,7 +21,19 @@ KIRBY_MOTOROLA_DOLBY := vendor/lenovo/kirby/dolby/motorola
 
 PRODUCT_COPY_FILES += \
     $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/default-permissions/default-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-com.dolby.daxservice.xml \
-    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/default-permissions/default-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-com.motorola.dolby.dolbyui.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.motosignature.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/com.motorola.software.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.motorola.software.dolbyui.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-checkin.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-settings.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/moto.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/privapp-com.motorola.android.providers.settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.motorola.android.providers.settings.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/privapp-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.motorola.dolby.dolbyui.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/sysconfig/config-com.motorola.android.providers.settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.motorola.android.providers.settings.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/sysconfig/config-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.motorola.dolby.dolbyui.xml \
+    $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/sysconfig/config-com.motorola.motosignature.app.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.motorola.motosignature.app.xml
 
 PRODUCT_COPY_FILES += \
     $(KIRBY_MOTOROLA_DOLBY)/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
