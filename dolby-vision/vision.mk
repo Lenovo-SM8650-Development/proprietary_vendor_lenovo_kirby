@@ -8,13 +8,13 @@ PRODUCT_PACKAGES += \
     kirby_dolby_vision_dvs_manifest \
     libkirby_dolby_vision_compat
 
-# Package the stock decoder and control service.
+# Keep pool creation and lookup in the same private Codec2 library.
 PRODUCT_COPY_FILES += \
-    $(KIRBY_DOLBY_VISION)/lib64/android.frameworks.sensorservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice-V1-ndk.so \
     $(KIRBY_DOLBY_VISION)/bin/hw/dvs-aidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/dvs-aidl-service \
     $(KIRBY_DOLBY_VISION)/bin/hw/vendor.dolby.media.c2@1.0-service-vision:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.media.c2@1.0-service-vision \
     $(KIRBY_DOLBY_VISION)/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvs-aidl-service.rc \
     $(KIRBY_DOLBY_VISION)/etc/init/vendor.dolby.media.c2@1.0-service-vision.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service-vision.rc \
+    $(KIRBY_DOLBY_VISION)/lib64/android.frameworks.sensorservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice-V1-ndk.so \
     $(KIRBY_DOLBY_VISION)/lib64/android.hardware.dvdec.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.dvdec.c2@1.0.so \
     $(KIRBY_DOLBY_VISION)/lib64/android.hardware.media.bufferpool2-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.media.bufferpool2-V1-ndk.so \
     $(KIRBY_DOLBY_VISION)/lib64/android.hardware.sensors-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors-V2-ndk.so \
@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     $(KIRBY_DOLBY_VISION)/lib64/c2.dolby.store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.store.so \
     $(KIRBY_DOLBY_VISION)/lib64/libcodec2_dovi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_dovi.so \
     $(KIRBY_DOLBY_VISION)/lib64/libcodec2_dovi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_dovi@1.0.so \
+    $(KIRBY_DOLBY_VISION)/lib64/libcodec2_dovi_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_dovi_plugin.so \
     $(KIRBY_DOLBY_VISION)/lib64/libcodec2_soft_kdovis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_kdovis.so \
     $(KIRBY_DOLBY_VISION)/lib64/libsfplugin_ccodec_kdovi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_kdovi.so \
     $(KIRBY_DOLBY_VISION)/lib64/libdolbydecoderprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbydecoderprocessor.so \
