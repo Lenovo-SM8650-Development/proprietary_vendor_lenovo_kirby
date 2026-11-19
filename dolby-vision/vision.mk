@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
 
 # Package the stock decoder and control service.
 PRODUCT_COPY_FILES += \
+    $(KIRBY_DOLBY_VISION)/lib64/android.frameworks.sensorservice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice-V1-ndk.so \
     $(KIRBY_DOLBY_VISION)/bin/hw/dvs-aidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/dvs-aidl-service \
     $(KIRBY_DOLBY_VISION)/bin/hw/vendor.dolby.media.c2@1.0-service-vision:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.media.c2@1.0-service-vision \
     $(KIRBY_DOLBY_VISION)/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvs-aidl-service.rc \
