@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     libkirby_dolby_vision_compat
 
 # Keep pool creation and lookup in the same private Codec2 library.
+# patch-graphic-buffer-size.py adapts the stock allocations to this ROM's libui.
 PRODUCT_COPY_FILES += \
     $(KIRBY_DOLBY_VISION)/bin/hw/dvs-aidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/dvs-aidl-service \
     $(KIRBY_DOLBY_VISION)/bin/hw/vendor.dolby.media.c2@1.0-service-vision:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.media.c2@1.0-service-vision \
